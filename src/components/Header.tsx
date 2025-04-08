@@ -10,7 +10,7 @@ const Header = () => {
           <img 
             src="/lovable-uploads/3e263d1d-4abf-4276-811e-d77a8ce1225a.png" 
             alt="simpleWorkflows Logo" 
-            className="h-12"
+            className="h-24" 
           />
         </div>
         
@@ -24,7 +24,7 @@ const Header = () => {
             className="bg-sw-blue hover:bg-blue-600 text-white font-medium"
             onClick={() => window.open("https://demo.simpleworkflows.us", "_blank", "noopener,noreferrer")}
           >
-            Get Demo
+            Demo
           </Button>
         </div>
       </div>
