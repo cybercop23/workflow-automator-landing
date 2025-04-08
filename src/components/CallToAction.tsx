@@ -14,20 +14,18 @@ const CallToAction = () => {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 pt-4">
             <Button 
-              as="a" 
-              href="https://demo.simpleworkflows.us" 
               className="bg-white text-sw-blue hover:bg-gray-100 font-medium text-lg px-8 py-6"
               size="lg"
+              onClick={() => window.open("https://demo.simpleworkflows.us", "_blank", "noopener,noreferrer")}
             >
               Get Started
               <ArrowRight className="ml-2 h-5 w-5" />
             </Button>
             <Button 
-              as="a" 
-              href="#contact" 
               variant="outline"
               className="border-white text-white hover:bg-white/10 font-medium text-lg px-8 py-6"
               size="lg"
+              onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
             >
               Contact Sales
             </Button>

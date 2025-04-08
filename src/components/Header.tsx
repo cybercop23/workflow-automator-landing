@@ -17,16 +17,12 @@ const Header = () => {
         <nav className="hidden md:flex items-center space-x-8">
           <a href="#features" className="text-sm font-medium text-gray-700 hover:text-sw-blue transition-colors">Features</a>
           <a href="#how-it-works" className="text-sm font-medium text-gray-700 hover:text-sw-blue transition-colors">How It Works</a>
-          <a href="#pricing" className="text-sm font-medium text-gray-700 hover:text-sw-blue transition-colors">Pricing</a>
         </nav>
         
         <div>
-          <Button 
-            as="a"
-            href="https://demo.simpleworkflows.us" 
-            target="_blank" 
-            rel="noopener noreferrer"
+          <Button
             className="bg-sw-blue hover:bg-blue-600 text-white font-medium"
+            onClick={() => window.open("https://demo.simpleworkflows.us", "_blank", "noopener,noreferrer")}
           >
             Get Demo
           </Button>
