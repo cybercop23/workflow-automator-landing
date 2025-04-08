@@ -10,7 +10,7 @@ const CallToAction = () => {
         <div className="flex flex-col items-center text-center space-y-6 max-w-3xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold text-white">Ready to Transform Your Business Operations?</h2>
           <p className="text-lg text-blue-100 max-w-2xl">
-            Join hundreds of businesses that have revolutionized their operations with simpleWorkflows AI assistants.
+            Join hundreds of businesses that have revolutionized their operations with AI assistants.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 pt-4">
             <Button 
@@ -23,9 +23,9 @@ const CallToAction = () => {
             </Button>
             <Button 
               variant="outline"
-              className="border-white text-white hover:bg-white/10 font-medium text-lg px-8 py-6"
+              className="bg-white text-sw-blue hover:bg-gray-100 border-white font-medium text-lg px-8 py-6"
               size="lg"
-              onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
+              onClick={() => window.location.href = "mailto:sales@simpleworkflows.us"}
             >
               Contact Sales
             </Button>
